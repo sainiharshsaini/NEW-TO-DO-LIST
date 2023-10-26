@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.section{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    background-size: cover;
+    background-image: url(https://i.pinimg.com/originals/ac/54/a1/ac54a128942c750799c2c1fe144d2467.jpg);
+}
+
+.container{
+    top: 15vh;
+    position: relative;
+    background-color:rgb(248, 54, 92);
+    width: 50vw;
+    height: 75vh;
+    margin: 0 25vw;
+    border-radius: 15px;
+    box-shadow:
+    inset 5px 5px 10px rgb(248, 54, 92),
+    inset 5px 5px 20px rgb(248, 54, 92),
+    inset -5px -5px 15px black;
+}
+
+h1{
+    position: relative;
+    top: 5vh;
+    margin: auto;
+    padding-top:3vh;
+    font-size: 40px;
+    border-radius: 15px;
+    height: 10vh;
+    width: 25vw;
+    background-color:dodgerblue;
+    box-shadow:
+    inset 5px 5px 10px dodgerblue,
+    inset 5px 5px 20px royalblue,
+    inset -5px -5px 15px black;
+    color: white;
+}
+
+.container .input{
+    position: relative;
+    top: 10vh;
+    width: 35vw;
+    height: 50px;
+    border-radius: 10px;
+    color: black;
+    font-size: 20px;
+}
+
+.container .btn{
+    position: relative;
+    top: 10vh;
+    width: 8vw;
+    height: 54px;
+    border-radius: 10px;
+    color: white;
+    background: rgb(16, 189, 16);
+    font-size: 30px;
+    box-shadow:  5px 5px 7px black,
+    inset 3px 3px 5px rgb(16, 189, 16),
+    inset -3px -3px 5px green;
+}
+
+.container ul{
+    list-style: square;
+    padding: 20px;
+}
+
+.container li{
+    font-size: 25px;
+    width: 39vw;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin: 3vh 0;
+    padding: 7px;
+    min-height: 12px;
+    top: 9vh;
+    left: 60px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: black;
+    background-color: yellow;
+    box-shadow:  5px 5px 7px black,
+    inset 3px 3px 5px yellow,
+    inset -3px -3px 5px yellow;
+}
+
+.container li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    width: 35px;
+    height: 35px;
+    background: red;
+    border-radius: 15%;
+}
+
+.container li::before{
+    content: '';
+    position: absolute;
+    left: -51px;
+    width: 42px;
+    height: 42px;
+    background-color:dodgerblue;
+    box-shadow:  5px 5px 7px black,
+    inset 3px 3px 5px dodgerblue,
+    inset -3px -3px 5px dodgerblue;
+    border-radius: 15%;
+}
+
+.container li a:hover{
+    width: 35px;
+    height: 35px;
+    border-radius: 15%;
+    align-items: center;
+    background: red;
+    box-shadow:  3px 3px 7px black,
+    inset 3px 3px 5px red,
+    inset -3px -3px 5px red;
+    justify-content: center;
+
+}
+
+.container li.done{
+    background: dodgerblue;
+    color: white;
+    text-decoration: line-through;
+}
+
+.container li.done::after{
+    content: '';
+    position: absolute;
+    left: -45px;
+    width: 25px;
+    top: 15px;
+    font-weight: bolder;
+    height: 12px;
+    border-bottom: 4px solid white;
+    border-left: 5px solid white;
+    transform: rotate(315deg);
+}
+
+.container #error{
+    position: relative;
+    color: black;
+    top: 12vh;
+    margin: 20px;
+    font-size: 25px;
+}
